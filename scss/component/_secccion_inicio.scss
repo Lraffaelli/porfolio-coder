@@ -1,5 +1,6 @@
 @import '../base/_colors';
 @import '../base/_variable';
+@import './experiencia';
 
 #inicio {
     position: relative;
@@ -31,20 +32,27 @@
      }
 
      .btn-mio {       
-       background: linear-gradient(
-         90deg,
-         rgba(255, 255, 255, 1) 0%,
-         rgba(22, 122, 89, 1) 0%,
-         rgba(12, 175, 173, 1) 100%
-       );
-       color:$white;
-       padding: 8px;
-       cursor: pointer;
-       transition: $transition;
-       &:hover{
-           font-weight: 600;
-           transform: scale(1.2);
-       }
+      display: flex;
+      justify-content: center;
+      width: 7em;
+      
+      text-decoration: none;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      border: 1.5px solid #75E6DA;
+      padding: 0.5em;
+      border-radius: 15px;
+      color: #000;
+      cursor: pointer;
+      transition: all 500ms;
+
+      &:hover{
+        width: 110px;           
+        background-color:#2d5382a5 ;
+        color: $white;
+        border: none;
+      }
      }
     }
     .social {    

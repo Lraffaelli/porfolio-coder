@@ -60,6 +60,112 @@ body {
   font-weight: 600;
 }
 
+#experiencia {
+  position: relative;
+  top: 80px;
+  text-align: center;
+  min-height: 100vh;
+  margin-top: 2em;
+  margin-bottom: 50px;
+}
+#experiencia .section-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+#experiencia .experiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#experiencia .experiencia .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+  width: 30%;
+  background-color: black;
+}
+#experiencia .experiencia .card:hover img {
+  transform: scale(1.1);
+  filter: blur(5px);
+  opacity: 40%;
+}
+#experiencia .experiencia .card:hover .job-data {
+  opacity: 100;
+}
+#experiencia .experiencia .card .job-data {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  opacity: 0;
+  transition: all 1000ms;
+}
+#experiencia .experiencia .card .job-data h3 {
+  font-size: 18px;
+  color: #fff;
+  margin: 10px 0;
+  text-shadow: 0px 0px 5px #777;
+  /* background-color: rgba(102, 102, 102, 0.75); */
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+}
+#experiencia .experiencia .card .job-data p {
+  font-size: 14px;
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-shadow: 0px 0px 5px #777;
+}
+#experiencia .experiencia .card .job-data .btn-data {
+  display: block;
+  width: 7em;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1.5px solid #75E6DA;
+  padding: 0.5em;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 500ms;
+}
+#experiencia .experiencia .card .job-data .btn-data:hover {
+  width: 110px;
+  background-color: #75e6c4a3;
+}
+#experiencia .experiencia .card img {
+  width: 100%;
+  z-index: 1;
+  transition: all 500ms;
+  filter: blur(0px);
+  opacity: 100;
+}
+#experiencia .experiencia .mi-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#experiencia .experiencia .mi-modal img {
+  width: 100%;
+}
+#experiencia .experiencia .mi-modal h3 {
+  font-size: 18px;
+}
+
 #inicio {
   position: relative;
   top: 80px;
@@ -89,15 +195,25 @@ body {
   margin-bottom: 15px;
 }
 #inicio .title .btn-mio {
-  background: linear-gradient(90deg, white 0%, #167a59 0%, #0cafad 100%);
-  color: #fff;
-  padding: 8px;
+  display: flex;
+  justify-content: center;
+  width: 7em;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1.5px solid #75E6DA;
+  padding: 0.5em;
+  border-radius: 15px;
+  color: #000;
   cursor: pointer;
-  transition: all 300ms;
+  transition: all 500ms;
 }
 #inicio .title .btn-mio:hover {
-  font-weight: 600;
-  transform: scale(1.2);
+  width: 110px;
+  background-color: #2d5382a5;
+  color: #fff;
+  border: none;
 }
 #inicio .social {
   display: flex;
@@ -198,17 +314,29 @@ body {
   border-radius: 15px;
   color: #fff;
   cursor: pointer;
-  transition: width 800ms;
+  transition: all 500ms;
 }
 #experiencia .experiencia .card .job-data .btn-data:hover {
-  width: 120px;
+  width: 110px;
+  background-color: #75e6c4a3;
 }
 #experiencia .experiencia .card img {
   width: 100%;
   z-index: 1;
-  transition: all 300ms;
+  transition: all 500ms;
   filter: blur(0px);
   opacity: 100;
+}
+#experiencia .experiencia .mi-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#experiencia .experiencia .mi-modal img {
+  width: 100%;
+}
+#experiencia .experiencia .mi-modal h3 {
+  font-size: 18px;
 }
 
 #proyectos {

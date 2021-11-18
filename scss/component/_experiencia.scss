@@ -72,10 +72,11 @@
           border-radius: 15px;
           color: $white;
           cursor: pointer;
-          transition: width 800ms;
+          transition: all 500ms;
 
           &:hover{
-            width: 120px;
+            width: 110px;           
+            background-color:#75e6c4a3 ;
           }
         }
       }
@@ -83,11 +84,22 @@
       img {
         width: $full-width;
         z-index: 1;
-        transition: $transition;
+        transition: all 500ms;
         filter: blur(0px);
         opacity: 100;
       }
 
+    }
+    .mi-modal{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 100%;
+      }
+      h3{
+        font-size: 18px;
+      }
     }
   }
 }

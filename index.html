@@ -45,21 +45,21 @@
 
             <ul class="nav menu">
               <li class="nav-item">
-                <a class="nav-link link-a active" href="#inicio">INICIO</a>
+                <a class="nav-link link-a active" href="#inicio">inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="#experiencia">EXPERIENCIA</a>
+                <a class="nav-link link-a" href="#experiencia">experiencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="#proyectos">PROYECTOS</a>
+                <a class="nav-link link-a" href="#proyectos">proyectos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link link-a" href="#publicaciones"
-                  >PUBLICACIONES</a
+                  >publicaciones</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="#contacto">CONTACTO</a>
+                <a class="nav-link link-a" href="#contacto">contacto</a>
               </li>
             </ul>
           </nav>
@@ -160,8 +160,12 @@
               class="card"
             >
               <div class="job-data">
-                <h3>Diseño Web y Móvil</h3>
-                <a href="#" class="btn-data" target="_blank">Ver Trabajo</a>
+                <h3>Web Desing/Development</h3>
+                <a                  
+                  class="btn-data"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Ver Trabajo</a>
               </div>
 
               <img src="./src/assets/img/job_1.jpg" alt="primer trabajo" />
@@ -178,7 +182,11 @@
                   High-end, custom residential renovaters serving Fraser Valley
                   homeowners.
                 </h3>
-                <a href="#" class="btn-data" target="_blank">Ver Trabajo</a>
+                <a                  
+                  class="btn-data"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Ver Trabajo</a>
               </div>
               <img
                 src="./src/assets/img/job_2.jpg"
@@ -200,7 +208,11 @@
                   sports competition.
                 </h3>
 
-                <a href="#" class="btn-data" target="_blank">Ver Trabajo</a>
+                <a                  
+                  class="btn-data"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Ver Trabajo</a>
               </div>
               <img
                 src="./src/assets/img/job_3.jpg"
@@ -221,7 +233,11 @@
                   Business savvy tech experts helping forward thinking companies
                   get things done.
                 </h3>
-                <a href="#" class="btn-data" target="_blank">Ver Trabajo</a>
+                <a                  
+                  class="btn-data"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Ver Trabajo</a>
               </div>
               <img src="./src/assets/img/job_4.jpg" alt="primer trabajo" />
             </article>
@@ -237,7 +253,11 @@
                   Vancouver's tower crane rental service and support leader
                   since 1974.
                 </h3>
-                <a href="#" class="btn-data" target="_blank">Ver Trabajo</a>
+                <a                  
+                  class="btn-data"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Ver Trabajo</a>
               </div>
               <img
                 src="./src/assets/img/job_5.jpg"
@@ -259,7 +279,11 @@
                   engineering firm.
                 </h3>
 
-                <a href="#" class="btn-data" target="_blank">Ver Trabajo</a>
+                <a                  
+                  class="btn-data"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Ver Trabajo</a>
               </div>
               <img
                 src="./src/assets/img/job_6.jpg"
@@ -268,6 +292,57 @@
                 height="auto"
               />
             </article>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg $modal-fade-transform">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Web Desing/Development
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body mi-modal row">
+                    <div class="col-md-6">
+                      <img
+                        src="./src/assets/img/modal.jpg"
+                        alt="Imagen Modal"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <h3>WEB DESIGN/DEVELOPMENT</h3>
+                      <p>
+                        El exitoso autor Adam Gidwitz buscaba un rediseño que
+                        reflejara su estilo de escritura único y pudiera
+                        expandirse para incluir proyectos actuales y futuros.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a
+                      class="btn btn-primary"                      
+                      href="https://www.adamgidwitz.com/"
+                      target="_blank"
+                      role="button"
+                      >Visitar Sitio</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fin Modal -->
           </div>
         </div>
       </section>

@@ -3,6 +3,7 @@
 @import '../base/_mixins';
 
 
+
 .header {
     background-color:$white;
     position: fixed;
@@ -12,6 +13,8 @@
     margin-bottom: 140px;
     z-index: 100;
 
+    
+    
     @include logo;
 
     @include link-menu;
