@@ -1,0 +1,71 @@
+@import "../base/_colors";
+@import "../base/_variable";
+@import "../base/_mixins";
+
+#proyectos {
+
+    @include flex-seccion;
+
+    background: linear-gradient(90deg, rgba(214, 214, 214, 1) 0%, rgba(177, 177, 177, 1) 100%);
+    padding: 30px 0;
+
+    @include title-seccion;
+
+    /* INICIO DE GALERIA DE TRABAJOS CON GRID */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 250px);
+        grid: column gap 15px;
+
+        .list-grid {
+            position: relative;
+            @include flex-col-all-center;
+            background-color: $white;
+            border-radius: 5px;
+            margin: 10px;
+            box-shadow: 0px 0px 4px #666;
+            overflow: hidden;
+            transition: $transition;
+
+            &:hover .title-exper {
+                opacity: 1;
+            }
+
+            &:hover .img-grid img {
+                filter: blur(2px);
+                transform: scale(1.1);
+            }
+
+            .title-exper {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(57, 58, 58, 0.4);
+                color: $white;
+                font-size: 1.5em;
+                font-weight: bold;
+                text-decoration: none;
+                text-shadow: $text-shadow;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.5s;
+                z-index: 1;
+            }
+
+            .img-grid {
+                width: $full-width;
+                height: auto;
+
+                img {
+                    filter: blur(0px);
+                    transition: all 0.3s ease-in;
+                }
+            }
+        }
+    }
+}

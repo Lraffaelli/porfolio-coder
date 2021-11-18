@@ -1,0 +1,66 @@
+@import "../base/_colors";
+@import "../base/_variable";
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #444;
+    color:$white ;
+    padding-bottom: 50px;
+
+    .box-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        width: 75%;
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+
+            label {
+                font-size: 18px;
+                font-weight: 700;
+                margin: 5px 0;
+                align-self: flex-start;
+                text-transform: uppercase;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                border: none;
+                background-color: #fff;
+                margin-bottom: 20px;
+                padding-left: 10px;
+            }
+            input {
+                height: 3em;
+            }
+
+            button {
+                width: 150px;
+                padding: 10px;
+                background-color: #ae2012;
+                color: #fff;
+                border: none;
+                font-size: 18px;
+                font-weight: 700;
+                transition: 300ms;
+
+                &:hover {
+                    background-color: #007f5f;
+                    border-radius: 20px;
+                    width: 130px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

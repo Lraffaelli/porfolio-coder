@@ -1,0 +1,93 @@
+@import "../base/_colors";
+@import "../base/_variable";
+@import "../base/_mixins";
+
+#experiencia {
+  position: relative;
+  top: 80px;
+  text-align: center;
+  min-height: 100vh;
+  margin-top: 2em;
+  margin-bottom: 50px;
+
+  @include title-seccion;
+
+  .experiencia {
+    @include flex-row-all-center;
+    flex-wrap: wrap;
+
+    .card {
+      position: relative;
+      @include flex-col-all-center;
+      border-radius: 15px;
+      overflow: hidden;
+      margin: 10px;
+      width: 30%;
+      background-color: black;
+
+      &:hover img {
+        transform: scale(1.1);
+        filter: blur(5px);
+        opacity: 40%;
+      }
+      &:hover .job-data{
+        opacity: 100;
+      }
+      .job-data {
+        position: absolute;
+        @include flex-col-all-center;        
+        z-index: 3;
+        opacity: 0;
+        transition: all 1000ms;
+
+
+        h3 {
+          font-size: 18px;
+          color: $white;
+          margin: 10px 0;
+          text-shadow: $text-shadow;
+          /* background-color: rgba(102, 102, 102, 0.75); */
+          padding: 5px;
+          border-radius: 5px 0 0 5px;
+        }
+        p {
+          font-size: 14px;
+          text-align: left;
+          padding: 5px;
+          color: $white;
+          font-family: $paragraf-font;
+          font-weight: 600;
+          text-shadow: $text-shadow;
+        }
+
+        .btn-data {
+          display: block;
+          width: 7em;
+          text-decoration: none;
+          text-align: center;
+          font-size: 12px;
+          font-weight: bold;
+          border: 1.5px solid #75E6DA;
+          padding: 0.5em;
+          border-radius: 15px;
+          color: $white;
+          cursor: pointer;
+          transition: width 800ms;
+
+          &:hover{
+            width: 120px;
+          }
+        }
+      }
+
+      img {
+        width: $full-width;
+        z-index: 1;
+        transition: $transition;
+        filter: blur(0px);
+        opacity: 100;
+      }
+
+    }
+  }
+}

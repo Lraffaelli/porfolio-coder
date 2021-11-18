@@ -1,0 +1,64 @@
+@import "../base/_colors";
+@import "../base/_variable";
+@import "../base/_mixins";
+
+/* publicaciones */
+#publicaciones {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 4em 0;
+
+    @include title-seccion;
+
+    .box-post {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .post {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 22%;
+            overflow: hidden;
+            border-right: 1px solid #555;
+            padding-right: 15px;
+
+            img {
+                width: $full-width;
+                margin-bottom: 10px;
+            }
+
+            span {
+                font-size: 10px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                font-family: oswald-bold;
+                font-size: 18px;
+                letter-spacing: 3px;
+                margin: 10px 0;
+            }
+
+            p {
+                font-size: 14px;
+                font-family: $paragraf-font;
+            }
+
+            svg {
+                color: $blue;
+                transition: $transition;
+
+                &:hover {
+                    color: #048d22;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
