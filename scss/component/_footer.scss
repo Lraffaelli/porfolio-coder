@@ -41,8 +41,8 @@
         text-decoration: none;
         color:$white;
     }
-    @include logo;
+    @extend %logo;
 
-    @include link-menu;
+    @extend %link-menu;
     
 }

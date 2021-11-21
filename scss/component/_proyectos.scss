@@ -4,12 +4,12 @@
 
 #proyectos {
 
-    @include flex-seccion;
+    @extend %flex-seccion;
 
     background: linear-gradient(90deg, rgba(214, 214, 214, 1) 0%, rgba(177, 177, 177, 1) 100%);
     padding: 30px 0;
 
-    @include title-seccion;
+    @extend %title-seccion;
 
     /* INICIO DE GALERIA DE TRABAJOS CON GRID */
     .grid {
@@ -20,7 +20,7 @@
 
         .list-grid {
             position: relative;
-            @include flex-col-all-center;
+            @extend %flex-col-all-center;
             background-color: $white;
             border-radius: 5px;
             margin: 10px;

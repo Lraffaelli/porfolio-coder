@@ -10,15 +10,15 @@
   margin-top: 2em;
   margin-bottom: 50px;
 
-  @include title-seccion;
+  @extend %title-seccion;
 
   .experiencia {
-    @include flex-row-all-center;
+    @extend %flex-row-all-center;
     flex-wrap: wrap;
 
     .card {
       position: relative;
-      @include flex-col-all-center;
+      @extend %flex-col-all-center;
       border-radius: 15px;
       overflow: hidden;
       margin: 10px;
@@ -35,7 +35,7 @@
       }
       .job-data {
         position: absolute;
-        @include flex-col-all-center;        
+        @extend %flex-col-all-center;        
         z-index: 3;
         opacity: 0;
         transition: all 1000ms;

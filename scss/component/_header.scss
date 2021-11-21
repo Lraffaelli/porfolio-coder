@@ -15,8 +15,8 @@
 
     
     
-    @include logo;
+    @extend %logo;
 
-    @include link-menu;
+    @extend %link-menu;
   }
   

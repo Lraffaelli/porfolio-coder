@@ -1,4 +1,4 @@
-@mixin logo {
+%logo {
     .isologo {
         display: flex;
         flex-direction: row;
@@ -18,7 +18,7 @@
     }
 }
 
-@mixin link-menu {
+%link-menu {
     .link-a {
         font-size: 12px;
         color: #666;
@@ -33,7 +33,7 @@
     }
 }
 
-@mixin title-seccion  {
+%title-seccion  {
     .section-title {
         font-size: 2em;
         font-weight: bold;
@@ -42,18 +42,18 @@
     }
 }
 
-@mixin flex-seccion {
-    @include flex-col-all-center;
+%flex-seccion {
+    @extend %flex-col-all-center;
     min-height: 100vh;
 }
 
-@mixin flex-col-all-center {
+%flex-col-all-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-@mixin flex-row-all-center {
+%flex-row-all-center {
     display: flex;
     flex-direction: row;
     justify-content: center;
