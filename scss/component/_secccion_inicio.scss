@@ -29,31 +29,33 @@
        width: 60%;
        text-shadow: $text-shadow;
        margin-bottom: 15px;
+
+       .btn-mio {       
+        display: flex;
+        justify-content: center;
+        width: 50%;        
+        margin: 15px auto;
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        border: 2px solid #75E6DA;
+        padding: 0.5em;
+        border-radius: 20px;
+        color: #000;
+        cursor: pointer;
+        transition: all 500ms;
+  
+        &:hover{                    
+          background-color:rgba(255, 255, 255, 0.7) ;
+          color:#272727;
+          border: none;
+          text-shadow:none;
+        }
+       }
+
      }
 
-     .btn-mio {       
-      display: flex;
-      justify-content: center;
-      width: 7em;
-      
-      text-decoration: none;
-      text-align: center;
-      font-size: 12px;
-      font-weight: bold;
-      border: 1.5px solid #75E6DA;
-      padding: 0.5em;
-      border-radius: 15px;
-      color: #000;
-      cursor: pointer;
-      transition: all 500ms;
-
-      &:hover{
-        width: 110px;           
-        background-color:#2d5382a5 ;
-        color: $white;
-        border: none;
-      }
-     }
     }
     .social {    
       display: flex;
