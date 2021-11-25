@@ -1,71 +1,90 @@
 @import "../base/_colors";
 @import "../base/_variable";
-
-.main-bio {
-    padding-bottom: 50px;
-    .about-header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../src/assets/img/bg-init2.jpg);
-        margin-top: 50px;
-        padding: 2.5em 0;
-        min-height: 350px;
-
-        .bio-init {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-
-            img {
-                width: 300px;
-            }
-            h2 {
-                font-size: 2.5em;
-                font-weight: bold;
-            }
-        }
-    }
-}
+@import "../base/mixins";
 
 .section-bio {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
-    margin-top: 50px;
-    h3 {
-        font-family: var(--title-font);
-        font-size: 2em;
-        font-style: italic;
-        background: linear-gradient(90deg, rgba(1, 65, 65, 0.8) 0%, rgba(171, 171, 171, 0) 100%);
-        padding: 0.2em;
-        color: #fff;
-    }
-    p {
-        display: flex;
-        width: 80%;
-        margin: 0 2em;
-        font-family: var(--paragraf-font);
-        font-size: 1em;
-        line-height: 1.8em;
-        margin-bottom: 15px;
-    }
-    a {
-        width: 8em;
-        background: linear-gradient(90deg, rgba(12, 168, 167) 0%, rgba(6, 179, 136, 1) 100%);
-        border: none;
-        padding: 0.5em;
-        border-radius: 15px;
-        color: #fff;
-        cursor: pointer;
-        transition:$transition;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
 
-        &:hover{
-            transform: scale(1.05);
-            background: #666;
+    .about-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 75px;
+        right: 100px;
+        h2 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 1.5em;
+            padding: 0.2em;
+            color: rgb(0, 236, 0);
+            &::after {
+                content: "{";
+                color: rgb(250, 184, 2);
+                font-size: 150px;
+            }
+        }
+        p {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            position: relative;
+            left: 170px;
+            top: -118px;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            color: rgb(5, 225, 233);
+
+            &::after {
+                content: "}";
+                color: rgb(250, 184, 2);
+                font-size: 150px;
+            }
+        }
+    }
+}
+
+.habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+    .box-hab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        h3 {
+            margin: 0 auto;
+            text-align: center;
+            color: $white;
+            margin-bottom: 20px;
+        }
+        .h-icon{
+            margin-top: 15px;
+            cursor: pointer;
+            img{
+                width: 60%; 
+                transition: all 300ms;
+                
+                &:hover{
+                    transform: scale(1.1) rotate(10deg);
+                }
+            };
+        }
+        .btn-contact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
         }
     }
 }

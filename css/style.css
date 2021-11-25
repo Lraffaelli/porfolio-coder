@@ -21,7 +21,6 @@ html {
 }
 
 body {
-  background-color: #f8f7ff;
   font-family: "Raleway", sans-serif;
 }
 
@@ -787,70 +786,139 @@ body {
   color: #fff;
 }
 
-.main-bio {
-  padding-bottom: 50px;
-}
-.main-bio .about-header {
+.header .isologo, #footer .isologo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url(../src/assets/img/bg-init2.jpg);
-  margin-top: 50px;
-  padding: 2.5em 0;
-  min-height: 350px;
 }
-.main-bio .about-header .bio-init {
+.header .isologo .isotipo, #footer .isologo .isotipo {
+  height: 50px;
+  margin: 0 10px;
+}
+.header .isologo .logo, #footer .isologo .logo {
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.header .link-a, #footer .link-a {
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header .link-a:hover, #footer .link-a:hover {
+  color: #0489fd;
+  font-weight: 600;
+}
+
+#experiencia .section-title, #proyectos .section-title, #publicaciones .section-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#proyectos {
+  min-height: 100vh;
+}
+
+#experiencia .experiencia .card, #experiencia .experiencia .card .job-data, #proyectos, #proyectos .grid .list-grid {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-.main-bio .about-header .bio-init img {
-  width: 300px;
-}
-.main-bio .about-header .bio-init h2 {
-  font-size: 2.5em;
-  font-weight: bold;
+
+#experiencia .experiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-bio {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-items: center;
-  margin-top: 50px;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
-.section-bio h3 {
-  font-family: var(--title-font);
-  font-size: 2em;
-  font-style: italic;
-  background: linear-gradient(90deg, rgba(1, 65, 65, 0.8) 0%, rgba(171, 171, 171, 0) 100%);
-  padding: 0.2em;
-  color: #fff;
-}
-.section-bio p {
+.section-bio .about-me {
   display: flex;
-  width: 80%;
-  margin: 0 2em;
-  font-family: var(--paragraf-font);
-  font-size: 1em;
-  line-height: 1.8em;
-  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 75px;
+  right: 100px;
 }
-.section-bio a {
-  width: 8em;
-  background: linear-gradient(90deg, #0ca8a7 0%, #06b388 100%);
-  border: none;
-  padding: 0.5em;
-  border-radius: 15px;
+.section-bio .about-me h2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 0.2em;
+  color: #00ec00;
+}
+.section-bio .about-me h2::after {
+  content: "{";
+  color: #fab802;
+  font-size: 150px;
+}
+.section-bio .about-me p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  left: 170px;
+  top: -118px;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: #05e1e9;
+}
+.section-bio .about-me p::after {
+  content: "}";
+  color: #fab802;
+  font-size: 150px;
+}
+
+.habilidades {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+.habilidades .box-hab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.habilidades .box-hab h3 {
+  margin: 0 auto;
+  text-align: center;
   color: #fff;
+  margin-bottom: 20px;
+}
+.habilidades .box-hab .h-icon {
+  margin-top: 15px;
   cursor: pointer;
+}
+.habilidades .box-hab .h-icon img {
+  width: 60%;
   transition: all 300ms;
 }
-.section-bio a:hover {
-  transform: scale(1.05);
-  background: #666;
+.habilidades .box-hab .h-icon img:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+.habilidades .box-hab .btn-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .header .isologo, #footer .isologo {
