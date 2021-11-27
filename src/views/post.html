@@ -4,29 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <!-- SEO -->
-     <meta
-     name="description"
-     content="Desarrollador web Front-End de la ciudad de Rosario - Santa Fe - Argentina con mas de 10 años de experiencia.
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Desarrollador web Front-End de la ciudad de Rosario - Santa Fe - Argentina con mas de 10 años de experiencia.
      Diseñador de páginas web. UX/UI. Programador web. Webmaster. Diseño y desarrollo web "
-   />
-   <meta
-     name="keywords"
-     content="desarrollador,full stack ,diseño web,front-end, rosario, freelance, javascript, developer"
-   />
+    />
+    <meta
+      name="keywords"
+      content="desarrollador,full stack ,diseño web,front-end, rosario, freelance, javascript, developer"
+    />
 
-   <!-- protocolo open graph -->
-   <meta
-     property="og:title"
-     content="Lucas Raffaelli - Desarrollador Frontend"
-   />
-   <meta
-     property="og:description"
-     content="Desarrollador web Front-End de la ciudad de Rosario - Santa Fe - Argentina con mas de 10 años de experiencia.
+    <!-- protocolo open graph -->
+    <meta
+      property="og:title"
+      content="Lucas Raffaelli - Desarrollador Frontend"
+    />
+    <meta
+      property="og:description"
+      content="Desarrollador web Front-End de la ciudad de Rosario - Santa Fe - Argentina con mas de 10 años de experiencia.
    Diseñador de páginas web. UX/UI. Programador web. Webmaster. Diseño y desarrollo web"
-   />
-   <meta property="og:url" content="http://lucasraffaelli.com/" />
-   <meta property="og:image" content="" />
+    />
+    <meta property="og:url" content="http://lucasraffaelli.com/" />
+    <meta property="og:image" content="" />
 
     <!-- Bootstrap -->
     <link
@@ -44,7 +44,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Lucas Raffaelli - Desarrollador Frontend | Blog </title>
+    <title>Lucas Raffaelli - Desarrollador Frontend | Blog</title>
   </head>
   <body>
     <!-- inicio de cabecera -->
@@ -59,21 +59,29 @@
 
             <ul class="nav menu">
               <li class="nav-item">
-                <a class="nav-link link-a active" href="#inicio">inicio</a>
+                <a class="nav-link link-a active" href="../../index.html"
+                  >inicio</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="#experiencia">experiencia</a>
+                <a class="nav-link link-a" href="../../index.html#experiencia"
+                  >experiencia</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="#proyectos">proyectos</a>
+                <a class="nav-link link-a" href="../../index.html#proyectos"
+                  >proyectos</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="#publicaciones"
+                <a class="nav-link link-a" href="../../index.html#publicaciones"
                   >publicaciones</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="#contacto">contacto</a>
+                <a class="nav-link link-a" href="../../index.html#contacto"
+                  >contacto</a
+                >
               </li>
             </ul>
           </nav>
@@ -81,10 +89,10 @@
       </div>
     </header>
     <!-- fin de cabecera -->
-    <main>
+    <main id="post">
       <section class="container main-post">
-        <article class="row d-flex justify-content-center ">
-          <div class="col-md-8" >
+        <article class="row d-flex justify-content-center">
+          <div class="col-md-8">
             <p class="label-post">blog</p>
             <h2>
               Cómo hacer un portafolio de diseño gráfico en 15 minutos con
@@ -93,8 +101,8 @@
             <div class="d-flex">
               <img src="../assets/img/post_1.jpg" alt="Post 1" />
             </div>
-            
-            <p>
+
+            <p class="lighting">
               Los diseñadores tienden a posponer su portafolio hasta que se
               convierte en una gran tarea que se cierne sobre sus cabezas.
               Carbonmade cambia eso. Si el nombre "Carbonmade" le suena
@@ -119,9 +127,107 @@
             </p>
           </div>
         </article>
-        <div class="row">
-          <div class="col">
+      </section>
+      <section class="arti-list">
+        <h3>Articulos Relacionados</h3>
+        <div class="container row d-flex justify-content-center">
+          <div class="card col-md-3 relacionado">
+            <img
+              src="../assets/img/post_1.jpg"
+              class="card-img-top"
+              alt="destacado"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                Instalación de MySQL en macOS Big Sur
+              </h4>
+              <p class="card-text">
+                En esta lección vamos a instalar MySQL en macOS Big Sur
+                utilizando para ello Homebrew. Además instalaremos el programa
+                Sequel Ace para explorar nuestras tablas con una interfaz
+                amigable.
+              </p>
 
+              <a href="./src/views/post.html" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-plus-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card col-md-3 relacionado">
+            <img
+              src="../assets/img/post_3.jpg"
+              class="card-img-top"
+              alt="destacado"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                Instalación de PHP, Composer, Laravel Valet y el instalador de
+                Laravel en macOS Big Sur
+              </h4>
+              <p class="card-text">
+                En este video-tutorial voy a instalar PHP con Homebrew,
+                Composer, Laravel Valet, el instalador de Laravel y crearemos un
+                par de proyectos demo de Laravel con la versión más actual o con
+                una versión específica del framework.
+              </p>
+              <a href="./src/views/post.html" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-plus-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="card col-md-3 relacionado">
+            <img
+              src="../assets/img/post_1.jpg"
+              class="card-img-top"
+              alt="destacado"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                Instalación de MySQL en macOS Big Sur
+              </h4>
+              <p class="card-text">
+                En esta lección vamos a instalar MySQL en macOS Big Sur
+                utilizando para ello Homebrew. Además instalaremos el programa
+                Sequel Ace para explorar nuestras tablas con una interfaz
+                amigable.
+              </p>
+              <a href="./src/views/post.html" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-plus-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -138,21 +244,29 @@
           <nav class="navbar col-md-9">
             <ul class="nav menu">
               <li class="nav-item">
-                <a class="nav-link link-a active" href="#inicio">inicio</a>
+                <a class="nav-link link-a active" href="../../index.html"
+                  >inicio</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="#experiencia">experiencia</a>
+                <a class="nav-link link-a" href="../../index.html#experiencia"
+                  >experiencia</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="#proyectos">proyectos</a>
+                <a class="nav-link link-a" href="../../index.html#proyectos"
+                  >proyectos</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="#publicaciones"
+                <a class="nav-link link-a" href="../../index.html#publicaciones"
                   >publicaciones</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="#contacto">contactos</a>
+                <a class="nav-link link-a" href="../../index.html#contacto"
+                  >contactos</a
+                >
               </li>
             </ul>
 
