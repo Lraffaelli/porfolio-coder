@@ -15,24 +15,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center;        
     }
-    .social-footer {
-        display: flex;
-        flex-direction: row;
-
-        a {
-            color:$white;
-            padding: 10px;
-            margin: 10px 0;
-            transition: $transition;
-
-            &:hover {
-                color: #a2d2ff;
-                transform: scale(1.3);
-            }
-        }
+    .social{
+        @extend %social-footer;
     }
+    
 
     .logo-footer {
         font-size: 24px;
@@ -44,5 +32,6 @@
     @extend %logo;
 
     @extend %link-menu;
+   
     
 }

@@ -9,9 +9,7 @@
     .card {
         width: 40%;
     }
-    .post {
-        max-width: 30%;
-    }
+    
     .grid {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 250px);
@@ -31,7 +29,7 @@
         }
     }
     .post {
-        max-width: 45%;
+        
         margin-bottom: 30px;
     }
     .box-form {

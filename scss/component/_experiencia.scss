@@ -4,11 +4,11 @@
 
 #experiencia {
   position: relative;
-  top: 80px;
+  
   text-align: center;
-  min-height: 100vh;
+  height: 100vh;
   margin-top: 2em;
-  margin-bottom: 50px;
+ 
 
   @extend %title-seccion;
 
@@ -21,8 +21,7 @@
       @extend %flex-col-all-center;
       border-radius: 15px;
       overflow: hidden;
-      margin: 10px;
-      width: 30%;
+      margin: 10px;     
       background-color: black;
 
       &:hover img {
@@ -82,7 +81,7 @@
       }
 
       img {
-        width: $full-width;
+        width: 110%;
         z-index: 1;
         transition: all 500ms;
         filter: blur(0px);

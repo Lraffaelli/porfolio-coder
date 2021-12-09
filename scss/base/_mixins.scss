@@ -59,3 +59,21 @@
     justify-content: center;
     align-items: center;
 }
+
+%social-footer {
+    display: flex;
+    flex-direction: row;
+
+    a {
+        color:$white;
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px 0;
+        transition: $transition;
+
+        &:hover {
+            color: #0489fd;
+            transform: scale(1.3);
+        }
+    }
+}
