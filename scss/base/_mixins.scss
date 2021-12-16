@@ -1,39 +1,19 @@
-%logo {
-    .isologo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-        .isotipo {
-            height: 50px;
-            margin: 0 10px;
-        }
-
-        .logo {
-            font-size: 25px;
-            letter-spacing: 3px;
-            font-weight: 500;
-        }
-    }
-}
-
 %link-menu {
     .link-a {
-        font-size: 12px;
-        color: #666;
+        font-size: 14px;
+        margin-right: 10px;
+        color: rgb(36, 36, 36);
         text-decoration: none;
         text-transform: uppercase;
-      
 
         &:hover {
-            color: #0489fd;
+            color:$ligth-blue;
             font-weight: 600;
         }
     }
 }
 
-%title-seccion  {
+%title-seccion {
     .section-title {
         font-size: 2em;
         font-weight: bold;
@@ -44,7 +24,7 @@
 
 %flex-seccion {
     @extend %flex-col-all-center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 %flex-col-all-center {
@@ -65,14 +45,14 @@
     flex-direction: row;
 
     a {
-        color:$white;
+        color: $white;
         text-decoration: none;
         padding: 10px;
         margin: 10px 0;
         transition: $transition;
 
         &:hover {
-            color: #0489fd;
+            color:$ligth-blue;
             transform: scale(1.3);
         }
     }

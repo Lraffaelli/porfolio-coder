@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: fit-content;
     margin: 4em 0;
 
     @extend %title-seccion;
@@ -27,8 +27,7 @@
             overflow: hidden;
             border-radius: 3px;
             padding-bottom: 10px;
-            margin: 5px 2px;
-            box-shadow: 0px 0px 10px #ccc;
+            
 
             img {
                 width: $full-width;
@@ -55,7 +54,7 @@
             }
 
             svg {
-                color: $blue;
+                color: $ligth-blue;
                 transition: $transition;
 
                 &:hover {

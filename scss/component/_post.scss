@@ -18,7 +18,7 @@
             &::before {
                 display: inline-block;
                 content: "";
-                border-top: 2px solid #fff;
+                border-top: 2px solid $white;
                 width: 6rem;
                 transform: translateY(-4px);
                 margin-right: 10px;
@@ -52,7 +52,7 @@
                 font-size: 100px;
                 font-family: "Times New Roman", Times, serif;
                 font-style: normal;
-                color: #0489fd;
+                color:$ligth-blue;
             }
             &::after {
                 position: relative;
@@ -61,7 +61,7 @@
                 font-size: 100px;
                 font-family: "Times New Roman", Times, serif;
                 font-style: normal;
-                color: #0489fd;
+                color: $ligth-blue;
             }
         }
         p {
@@ -98,7 +98,7 @@
                 width: 100%;
             }
             svg {
-                color: $blue;
+                color: $ligth-blue;
                 transition: $transition;
 
                 &:hover {

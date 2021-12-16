@@ -1,15 +1,12 @@
 @media (max-width: 992px) {
-    .navbar {
-        justify-content: center;
+    .navbar-header {
+        justify-content: space-between;
     }
 
     #experiencia {
         margin-bottom: 7em;
     }
-    .card {
-        width: 40%;
-    }
-    
+
     .grid {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 250px);
@@ -29,11 +26,26 @@
         }
     }
     .post {
-        
         margin-bottom: 30px;
     }
     .box-form {
-        width: 80%;
+        width: 100%;
+    }
+    #proyectos {
+        height: fit-content;
+    }
+    .nav {
+        display: none;
+    }
+    #footer {
+        .footer-nav{
+            .logo-footer {
+                flex-direction: row;
+            }
+            .navbar-footer {
+                justify-content: flex-end;
+            }
+        }       
     }
 }
 @media (max-width: 576px) {
@@ -45,9 +57,7 @@
     .section-title {
         font-size: 1.5em;
     }
-    .card {
-        width: 100%;
-    }
+
     .post {
         p {
             display: none;
@@ -62,4 +72,38 @@
     .nav-link {
         padding: 0.5rem;
     }
+}
+@media (max-width: 425px) {
+    #inicio {
+        .title {
+            margin-top: 120px;
+
+            p {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+        .social {
+            flex-direction: row;
+        }
+    }
+    #footer {
+        .footer-nav{
+            .logo-footer {
+                flex-direction: column;
+            }
+            .navbar-footer {
+                justify-content:center;
+            }
+        }       
+    }
+}
+
+@media (max-width: 375px) {
+    .header{
+        .navbar-header  {
+            justify-content: center;
+        } 
+    }
+    
 }

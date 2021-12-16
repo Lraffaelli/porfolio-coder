@@ -24,45 +24,14 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-#footer .isologo, .header .isologo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-#footer .isologo .isotipo, .header .isologo .isotipo {
-  height: 50px;
-  margin: 0 10px;
-}
-#footer .isologo .logo, .header .isologo .logo {
-  font-size: 25px;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
-
-#footer .link-a, .header .link-a {
-  font-size: 12px;
-  color: #666;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-#footer .link-a:hover, .header .link-a:hover {
-  color: #0489fd;
-  font-weight: 600;
-}
-
-#publicaciones .section-title, #proyectos .section-title, #experiencia .section-title {
+#publicaciones .section-title, #experiencia .section-title {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 15px;
   text-align: center;
 }
 
-#proyectos {
-  min-height: 100vh;
-}
-
-#proyectos .grid .list-grid, #experiencia .experiencia .card .job-data, #experiencia .experiencia .card, #proyectos {
+#proyectos .grid .list-grid, #proyectos, #experiencia .experiencia .card .job-data, #experiencia .experiencia .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,46 +71,51 @@ body {
   margin-bottom: 140px;
   z-index: 100;
 }
-
-#footer .isologo, .header .isologo {
+.header .navbar-header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.header .navbar-header .logo-header {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-#footer .isologo .isotipo, .header .isologo .isotipo {
+.header .navbar-header .logo-header .isotipo {
   height: 50px;
   margin: 0 10px;
 }
-#footer .isologo .logo, .header .isologo .logo {
+.header .navbar-header .logo-header h1 {
   font-size: 25px;
   letter-spacing: 3px;
   font-weight: 500;
 }
-
-#footer .link-a, .header .link-a {
-  font-size: 12px;
+.header .navbar-header .menu .link-a {
+  font-size: 14px;
   color: #666;
+  margin-right: 10px;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 600;
 }
-#footer .link-a:hover, .header .link-a:hover {
+.header .navbar-header .menu .link-a:hover {
   color: #0489fd;
   font-weight: 600;
 }
 
-#publicaciones .section-title, #proyectos .section-title, #experiencia .section-title {
+#publicaciones .section-title, #experiencia .section-title {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 15px;
   text-align: center;
 }
 
-#proyectos {
-  min-height: 100vh;
-}
-
-#proyectos .grid .list-grid, #experiencia .experiencia .card .job-data, #experiencia .experiencia .card, #proyectos {
+#proyectos .grid .list-grid, #proyectos, #experiencia .experiencia .card .job-data, #experiencia .experiencia .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,20 +146,23 @@ body {
 }
 
 #experiencia {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  height: 100vh;
+  height: fit-content;
   margin-top: 2em;
 }
 #experiencia .experiencia {
   flex-wrap: wrap;
 }
 #experiencia .experiencia .card {
-  position: relative;
+  /*  position: relative; */
   border-radius: 15px;
   overflow: hidden;
   margin: 10px;
   background-color: black;
+  border: none;
 }
 #experiencia .experiencia .card:hover img {
   transform: scale(1.1);
@@ -261,7 +238,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(../../src/assets/img/bg_dev.png) no-repeat;
+  background: url(../../src/assets/img/bg_dev2.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -321,42 +298,11 @@ body {
   transform: scale(1.3);
 }
 
-#footer .isologo, .header .isologo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-#footer .isologo .isotipo, .header .isologo .isotipo {
-  height: 50px;
-  margin: 0 10px;
-}
-#footer .isologo .logo, .header .isologo .logo {
-  font-size: 25px;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
-
-#footer .link-a, .header .link-a {
-  font-size: 12px;
-  color: #666;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-#footer .link-a:hover, .header .link-a:hover {
-  color: #0489fd;
-  font-weight: 600;
-}
-
-#publicaciones .section-title, #proyectos .section-title, #experiencia .section-title {
+#publicaciones .section-title, #experiencia .section-title {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 15px;
   text-align: center;
-}
-
-#proyectos {
-  min-height: 100vh;
 }
 
 #proyectos .grid .list-grid, #proyectos, #experiencia .experiencia .card, #experiencia .experiencia .card .job-data {
@@ -390,20 +336,23 @@ body {
 }
 
 #experiencia {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  height: 100vh;
+  height: fit-content;
   margin-top: 2em;
 }
 #experiencia .experiencia {
   flex-wrap: wrap;
 }
 #experiencia .experiencia .card {
-  position: relative;
+  /*  position: relative; */
   border-radius: 15px;
   overflow: hidden;
   margin: 10px;
   background-color: black;
+  border: none;
 }
 #experiencia .experiencia .card:hover img {
   transform: scale(1.1);
@@ -474,42 +423,11 @@ body {
   font-size: 18px;
 }
 
-#footer .isologo, .header .isologo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-#footer .isologo .isotipo, .header .isologo .isotipo {
-  height: 50px;
-  margin: 0 10px;
-}
-#footer .isologo .logo, .header .isologo .logo {
-  font-size: 25px;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
-
-#footer .link-a, .header .link-a {
-  font-size: 12px;
-  color: #666;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-#footer .link-a:hover, .header .link-a:hover {
-  color: #0489fd;
-  font-weight: 600;
-}
-
-#publicaciones .section-title, #proyectos .section-title, #experiencia .section-title {
+#publicaciones .section-title, #experiencia .section-title {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 15px;
   text-align: center;
-}
-
-#proyectos {
-  min-height: 100vh;
 }
 
 #proyectos .grid .list-grid, #proyectos, #experiencia .experiencia .card, #experiencia .experiencia .card .job-data {
@@ -543,21 +461,26 @@ body {
 }
 
 #proyectos {
-  background: linear-gradient(90deg, #d6d6d6 0%, #b1b1b1 100%);
+  height: fit-content;
+  background: linear-gradient(270deg, #2aa9e0 0%, #3a508e 100%);
   padding: 30px 0;
+  height: 100vh;
   /* INICIO DE GALERIA DE TRABAJOS CON GRID */
 }
+#proyectos h2 {
+  color: #fff;
+}
 #proyectos .grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 250px);
-  grid: column gap 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 #proyectos .grid .list-grid {
   position: relative;
+  height: 350px;
   background-color: #fff;
   border-radius: 5px;
-  margin: 10px;
+  margin: 5px;
   box-shadow: 0px 0px 4px #666;
   overflow: hidden;
   transition: all 300ms;
@@ -575,21 +498,31 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(57, 58, 58, 0.4);
+  background: rgba(4, 106, 201, 0.6);
   color: #fff;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
   text-shadow: 0px 0px 5px #777;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity 0.5s;
   z-index: 1;
+  cursor: pointer;
+}
+#proyectos .grid .list-grid .title-exper h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+#proyectos .grid .list-grid .title-exper p {
+  font-size: 15px;
+  text-align: center;
+  padding: 5px;
+  margin: 0 15px;
 }
 #proyectos .grid .list-grid .img-grid {
-  width: 100%;
   height: auto;
 }
 #proyectos .grid .list-grid .img-grid img {
@@ -597,42 +530,11 @@ body {
   transition: all 0.3s ease-in;
 }
 
-#footer .isologo, .header .isologo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-#footer .isologo .isotipo, .header .isologo .isotipo {
-  height: 50px;
-  margin: 0 10px;
-}
-#footer .isologo .logo, .header .isologo .logo {
-  font-size: 25px;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
-
-#footer .link-a, .header .link-a {
-  font-size: 12px;
-  color: #666;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-#footer .link-a:hover, .header .link-a:hover {
-  color: #0489fd;
-  font-weight: 600;
-}
-
-#publicaciones .section-title, #experiencia .section-title, #proyectos .section-title {
+#publicaciones .section-title, #experiencia .section-title {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 15px;
   text-align: center;
-}
-
-#proyectos {
-  min-height: 100vh;
 }
 
 #experiencia .experiencia .card, #experiencia .experiencia .card .job-data, #proyectos, #proyectos .grid .list-grid {
@@ -671,7 +573,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: fit-content;
   margin: 4em 0;
 }
 #publicaciones .box-post {
@@ -688,8 +590,6 @@ body {
   overflow: hidden;
   border-radius: 3px;
   padding-bottom: 10px;
-  margin: 5px 2px;
-  box-shadow: 0px 0px 10px #ccc;
 }
 #publicaciones .box-post .post img {
   width: 100%;
@@ -712,7 +612,7 @@ body {
   margin: 0 10px;
 }
 #publicaciones .box-post .post svg {
-  color: #0d3b66;
+  color: #0489fd;
   transition: all 300ms;
 }
 #publicaciones .box-post .post svg:hover {
@@ -720,42 +620,11 @@ body {
   transform: rotate(45deg);
 }
 
-#footer .isologo, .header .isologo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-#footer .isologo .isotipo, .header .isologo .isotipo {
-  height: 50px;
-  margin: 0 10px;
-}
-#footer .isologo .logo, .header .isologo .logo {
-  font-size: 25px;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
-
-#footer .link-a, .header .link-a {
-  font-size: 12px;
-  color: #666;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-#footer .link-a:hover, .header .link-a:hover {
-  color: #0489fd;
-  font-weight: 600;
-}
-
-#experiencia .section-title, #proyectos .section-title, #publicaciones .section-title {
+#experiencia .section-title, #publicaciones .section-title {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 15px;
   text-align: center;
-}
-
-#proyectos {
-  min-height: 100vh;
 }
 
 #experiencia .experiencia .card, #experiencia .experiencia .card .job-data, #proyectos, #proyectos .grid .list-grid {
@@ -793,7 +662,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background-color: #444;
+  background: linear-gradient(270deg, #2aa9e0 0%, #3a508e 100%);
   color: #fff;
   padding-bottom: 50px;
 }
@@ -849,8 +718,8 @@ body {
 #contacto .box-form .contact-form button {
   width: 120px;
   padding: 3px;
-  background-color: #007f5f;
-  color: #fff;
+  background-color: #fff;
+  color: #333;
   border: none;
   border-radius: 5px;
   font-size: 18px;
@@ -858,47 +727,16 @@ body {
   transition: 300ms;
 }
 #contacto .box-form .contact-form button:hover {
-  background-color: #fff;
-  color: #666;
+  background-color: #007f5f;
+  color: #fff;
   cursor: pointer;
 }
 
-#footer .isologo, .header .isologo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-#footer .isologo .isotipo, .header .isologo .isotipo {
-  height: 50px;
-  margin: 0 10px;
-}
-#footer .isologo .logo, .header .isologo .logo {
-  font-size: 25px;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
-
-#footer .link-a, .header .link-a {
-  font-size: 12px;
-  color: #666;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-#footer .link-a:hover, .header .link-a:hover {
-  color: #0489fd;
-  font-weight: 600;
-}
-
-#experiencia .section-title, #proyectos .section-title, #publicaciones .section-title {
+#experiencia .section-title, #publicaciones .section-title {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 15px;
   text-align: center;
-}
-
-#proyectos {
-  min-height: 100vh;
 }
 
 #experiencia .experiencia .card, #experiencia .experiencia .card .job-data, #proyectos, #proyectos .grid .list-grid {
@@ -932,64 +770,64 @@ body {
 }
 
 #footer {
-  background-color: #000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-  color: #fff;
-}
-#footer .footer-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#footer .logo-footer {
-  font-size: 24px;
-  font-weight: 300;
-  letter-spacing: 3px;
-  text-decoration: none;
-  color: #fff;
-}
-
-.header .isologo, #footer .isologo {
+  background-color: #0d0d19;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
+  color: #fff;
+  border-top: 2px inset #0d3b66;
 }
-.header .isologo .isotipo, #footer .isologo .isotipo {
+#footer .footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .footer-nav .navbar-footer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+#footer .logo-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#footer .logo-footer .isotipo {
   height: 50px;
   margin: 0 10px;
 }
-.header .isologo .logo, #footer .isologo .logo {
-  font-size: 25px;
+#footer .logo-footer h3 {
+  font-size: 20px;
+  font-weight: 600;
   letter-spacing: 3px;
-  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
 }
-
-.header .link-a, #footer .link-a {
-  font-size: 12px;
-  color: #666;
+#footer .menu-footer .link-a {
+  font-size: 14px;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 600;
 }
-.header .link-a:hover, #footer .link-a:hover {
+#footer .menu-footer .link-a:hover {
   color: #0489fd;
   font-weight: 600;
 }
 
-#experiencia .section-title, #proyectos .section-title, #publicaciones .section-title {
+#experiencia .section-title, #publicaciones .section-title {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 15px;
   text-align: center;
-}
-
-#proyectos {
-  min-height: 100vh;
 }
 
 #experiencia .experiencia .card, #experiencia .experiencia .card .job-data, #proyectos, #proyectos .grid .list-grid {
@@ -1105,42 +943,11 @@ body {
   margin: 0 auto;
 }
 
-.header .isologo, #footer .isologo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.header .isologo .isotipo, #footer .isologo .isotipo {
-  height: 50px;
-  margin: 0 10px;
-}
-.header .isologo .logo, #footer .isologo .logo {
-  font-size: 25px;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
-
-.header .link-a, #footer .link-a {
-  font-size: 12px;
-  color: #666;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.header .link-a:hover, #footer .link-a:hover {
-  color: #0489fd;
-  font-weight: 600;
-}
-
-#experiencia .section-title, #proyectos .section-title, #publicaciones .section-title {
+#experiencia .section-title, #publicaciones .section-title {
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 15px;
   text-align: center;
-}
-
-#proyectos {
-  min-height: 100vh;
 }
 
 #experiencia .experiencia .card, #experiencia .experiencia .card .job-data, #proyectos, #proyectos .grid .list-grid {
@@ -1266,7 +1073,7 @@ body {
   width: 100%;
 }
 #post .arti-list .relacionado svg {
-  color: #0d3b66;
+  color: #0489fd;
   transition: all 300ms;
 }
 #post .arti-list .relacionado svg:hover {
@@ -1275,16 +1082,12 @@ body {
 }
 
 @media (max-width: 992px) {
-  .navbar {
-    justify-content: center;
+  .navbar-header {
+    justify-content: space-between;
   }
 
   #experiencia {
     margin-bottom: 7em;
-  }
-
-  .card {
-    width: 40%;
   }
 
   .grid {
@@ -1310,7 +1113,22 @@ body {
   }
 
   .box-form {
-    width: 80%;
+    width: 100%;
+  }
+
+  #proyectos {
+    height: fit-content;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  #footer .footer-nav .logo-footer {
+    flex-direction: row;
+  }
+  #footer .footer-nav .navbar-footer {
+    justify-content: flex-end;
   }
 }
 @media (max-width: 576px) {
@@ -1321,10 +1139,6 @@ body {
 
   .section-title {
     font-size: 1.5em;
-  }
-
-  .card {
-    width: 100%;
   }
 
   .post p {
@@ -1339,6 +1153,30 @@ body {
 @media (max-width: 480px) {
   .nav-link {
     padding: 0.5rem;
+  }
+}
+@media (max-width: 425px) {
+  #inicio .title {
+    margin-top: 120px;
+  }
+  #inicio .title p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #inicio .social {
+    flex-direction: row;
+  }
+
+  #footer .footer-nav .logo-footer {
+    flex-direction: column;
+  }
+  #footer .footer-nav .navbar-footer {
+    justify-content: center;
+  }
+}
+@media (max-width: 375px) {
+  .header .navbar-header {
+    justify-content: center;
   }
 }
 
