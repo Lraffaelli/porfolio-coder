@@ -49,39 +49,49 @@
   <body>
     <!-- inicio de cabecera -->
     <header class="header">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row d-flex justify-content-center aling-items-center">
-          <nav class="navbar col-md-10">
-            <div class="isologo">
-              <img class="isotipo" src="../assets/img/isotipo.png" alt="Logo" />
-              <h1 class="logo">Lucas Raffaelli</h1>
+          <nav
+            class="navbar-header navbar-expand-lg navbar-light col-md-10 col-sm-12"
+          >
+            <div class="navbar-brand logo-header">
+              <img
+                class="isotipo"
+                src="../assets/img/isotipo.png"
+                alt="Logo"
+              />
+              <h1>Lucas Raffaelli</h1>
             </div>
 
-            <ul class="nav menu">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu_navegacion"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul
+              id="menu_navegacion"
+              class="menu navbar-nav navbar collapse navbar-collapse justify-content-end"
+            >
               <li class="nav-item">
-                <a class="nav-link link-a active" href="../../index.html"
-                  >inicio</a
-                >
+                <a class="nav-link link-a" href="../../#inicio">inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="../../index.html#experiencia"
-                  >experiencia</a
-                >
+                <a class="nav-link link-a" href="../../#experiencia">experiencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="../../index.html#proyectos"
-                  >proyectos</a
-                >
+                <a class="nav-link link-a" href="../../#proyectos">servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="../../index.html#publicaciones"
+                <a class="nav-link link-a" href="../../#publicaciones"
                   >publicaciones</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="../../index.html#contacto"
-                  >contacto</a
-                >
+                <a class="nav-link link-a" href="../../#contacto">contacto</a>
               </li>
             </ul>
           </nav>
@@ -132,7 +142,7 @@
         <h3>Articulos Relacionados</h3>
         
         <div class="container row d-flex justify-content-center">
-          <div class="card col-md-3 relacionado">
+          <div class="card col-lg-3 col-md-4 col-sm-8 relacionado">
             <img
               src="../assets/img/post_1.jpg"
               class="card-img-top"
@@ -142,12 +152,6 @@
               <h4 class="card-title">
                 Instalación de MySQL en macOS Big Sur
               </h4>
-              <!-- <p class="card-text">
-                En esta lección vamos a instalar MySQL en macOS Big Sur
-                utilizando para ello Homebrew. Además instalaremos el programa
-                Sequel Ace para explorar nuestras tablas con una interfaz
-                amigable.
-              </p> -->
 
               <a href="./src/views/post.html" target="_blank">
                 <svg
@@ -165,7 +169,7 @@
               </a>
             </div>
           </div>
-          <div class="card col-md-3 relacionado">
+          <div class="card col-lg-3 col-md-4 col-sm-8 relacionado">
             <img
               src="../assets/img/post_3.jpg"
               class="card-img-top"
@@ -176,12 +180,7 @@
                 Instalación de PHP, Composer, Laravel Valet y el instalador de
                 Laravel en macOS Big Sur
               </h4>
-              <p class="card-text">
-                En este video-tutorial voy a instalar PHP con Homebrew,
-                Composer, Laravel Valet, el instalador de Laravel y crearemos un
-                par de proyectos demo de Laravel con la versión más actual o con
-                una versión específica del framework.
-              </p>
+              
               <a href="./src/views/post.html" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +197,7 @@
               </a>
             </div>
           </div>
-          <div class="card col-md-3 relacionado">
+          <div class="card col-lg-3 col-md-4 col-sm-8 relacionado">
             <img
               src="../assets/img/post_1.jpg"
               class="card-img-top"
@@ -208,12 +207,7 @@
               <h4 class="card-title">
                 Instalación de MySQL en macOS Big Sur
               </h4>
-              <p class="card-text">
-                En esta lección vamos a instalar MySQL en macOS Big Sur
-                utilizando para ello Homebrew. Además instalaremos el programa
-                Sequel Ace para explorar nuestras tablas con una interfaz
-                amigable.
-              </p>
+              
               <a href="./src/views/post.html" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -237,37 +231,33 @@
     <!-- inicio Footer -->
     <footer id="footer">
       <div class="container">
-        <div class="row d-flex">
-          <div class="col-md-3 isologo">
-            <img class="isotipo" src="../assets/img/isotipo.png" alt="Logo" />
-            <h2 class="logo">Lucas Raffaelli</h2>
+        <div class="row footer-nav">
+          <div class="col-md-3 logo-footer">
+            <img
+              class="isotipo"
+              src="../assets/img/isotipo.png"
+              alt="Lucas Raffaelli"
+            />
+            <h3>Lucas Raffaelli</h3>
           </div>
-          <nav class="navbar col-md-9">
-            <ul class="nav menu">
+          <nav class="navbar-footer col-md-9">
+            <ul class="nav menu-footer">
               <li class="nav-item">
-                <a class="nav-link link-a active" href="../../index.html"
-                  >inicio</a
+                <a class="nav-link link-a active" href="../../#inicio">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-a" href="../../#experiencia">EXPERIENCIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-a" href="../../#proyectos">PROYECTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-a" href="../../#publicaciones"
+                  >PUBLICACIONES</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link link-a" href="../../index.html#experiencia"
-                  >experiencia</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-a" href="../../index.html#proyectos"
-                  >proyectos</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-a" href="../../index.html#publicaciones"
-                  >publicaciones</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-a" href="../../index.html#contacto"
-                  >contactos</a
-                >
+                <a class="nav-link link-a" href="../../#contacto">CONTACTO</a>
               </li>
             </ul>
 
@@ -343,5 +333,25 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var myModal = document.getElementById("myModal");
+      var myInput = document.getElementById("myInput");
+
+      myModal.addEventListener("shown.bs.modal", function () {
+        myInput.focus();
+      });
+    </script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
   </body>
 </html>
