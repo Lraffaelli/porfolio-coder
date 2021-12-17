@@ -103,100 +103,156 @@
           <div class="col-md-8">
             <p class="label-post">blog</p>
             <h2>
-              ¿Qué es React y cómo funciona?
+              Páginas web estáticas vs páginas web dinámicas
             </h2>
             <div class="d-flex">
-              <img src="../assets/img/post_1.png" alt="react js" />
+              <img
+                src="../assets/img/post_4.jpg"
+                alt="Páginas web estáticas vs páginas web dinámicas"
+              />
             </div>
 
             <p class="lighting">
-              Para crear un sitio o aplicación web que ofrezca funcionalidades
-              complejas es necesario contar con tecnología que posibilite el
-              desarrollo de software óptimo y eficaz. Desde controlar el clic en
-              un botón, hasta animar el logo de una empresa, los
-              desarrolladores/as buscan constantemente mejores herramientas para
-              construir interfaces altamente interactivas, y una de ellas es la
-              librería React.
+              Cuando se trata de desarrollar un sitio web lo primero que debes
+              considerar es cómo lo quieres construir, como un sitio web
+              estático o como un sitio web dinámico. Pero, ¿qué hace que un
+              sitio web sea categorizado “estático” o “dinámico”?
             </p>
-            <h3>¿Qué es React?</h3>
+            <h3>Comunicación entre servidores y navegadores web</h3>
             <p>
-              Es una librería de código abierto que se utiliza principalmente
-              para construir interfaces; es decir, es una tecnología enfocada en
-              la interactividad. Está orientada al front-end (parte del software
-              que el usuarios utiliza) y su adopción ha ido aumentado en los
-              últimos años.
+              Para entender la comunicación más básica que ocurre en Internet,
+              debemos saber que en ella están involucrados un servidor web, como
+              IIS, Apache o NGINX, que contiene los archivos HTML, CSS y
+              JavaScript de las páginas web, y un cliente, el navegador (Chrome,
+              Firefox, Edge).
             </p>
             <p>
-              React se presenta como una excelente alternativa para hacer todo
-              tipo de aplicaciones web, SPA (Single Page Application) y hasta
-              aplicaciones para dispositivos móviles. Se destaca por contar con
-              un completo ecosistema de módulos, herramientas y componentes que
-              posibilitan desarrollar funcionalidades complejas en poco tiempo.
+              El servidor web y el cliente se comunican a través de los
+              protocolos HTTP (Hypertext Transfer Protocol), el protocolo de
+              Transferencia de Hipertexto y la versión segura HTTPS (HyperText
+              Transfer Protocol Secure), una serie de reglas que permiten la
+              transferencia de información a través de archivos en la Internet.
+              La diferencia principal entre HTTP y HTTPS, es que, con este
+              último, la comunicación entre el servidor y el cliente es cifrada
+              permitiendo que la transmisión de los datos sea segura, brindando
+              mayor integridad y confidencialidad a los mismos.
             </p>
             <p>
-              En ese sentido, React ofrece un entorno de trabajo robusto para
-              programar usando el lenguaje JavaScript. Además, brinda ciertas
-              facilidades para generar interfaces de usuario dinámicas. No
-              obstante, con React solo desarrollamos una parte de una aplicación
-              web, el frontend, por lo que esta tecnología debe estar integrada
-              con otras para conformar una solución completa, por lo que muchos
-              suelen decir que React es la “V” de un framework MCV
-              (Modelo-Vista-Controlador).
+              La comunicación entre ellos inicia cuando el usuario, a través del
+              navegador, ingresa la dirección de un sitio web (conocida como la
+              URL del inglés Uniform Resource Locator ó LRU que se refiere al
+              Localizador de Recursos Uniforme en español), generando una
+              petición al servidor web para encontrar los archivos de dicha
+              página en dónde están alojados (HTTP request). Luego, el servidor
+              web responde a la petición y devuelve los archivos del sitio web
+              (HTTP response). La respuesta llega al navegador como una copia en
+              formato HTML de la página web, y es en este momento cuando el
+              usuario puede verla en su pantalla.
+            </p>
+
+            <h3>Qué es una página web estática</h3>
+            <p>
+              Lo primero que debemos entender es ¿a qué nos referimos con la
+              palabra estática en el contexto de una página web?, y no es más
+              que aquello que en el ámbito del código fuente del sitio web se
+              encuentra fijo, no se mueve ni cambia de ninguna manera. Cuando
+              hablamos de “estático” también podemos referirnos a que la página
+              web tiene un número fijo de página, es decir, que tal como fue
+              diseñada y almacenada en el servidor web, así mismo la recibe el
+              navegador y la ve el usuario, como un número fijo de páginas HTML.
             </p>
             <p>
-              El elemento característico de esta librería se identifica como el
-              componente, una pieza central de la interfaz de usuario. Debemos
-              tener en cuenta que, al diseñar con React, se crean componentes
-              independientes y reusables para crear interfaces modulares y
-              adaptables. Todas las aplicaciones desarrolladas con React, tienen
-              un componente al que siempre se le denomina “raíz” y, a su vez,
-              tiene otros llamados “hijos” quienes conforman un árbol de
-              componentes que están entrelazados entre sí.
-            </p>
-            <h3>¿Cómo funciona React?</h3>
-            <p>
-              Para entender cómo funciona React situémonos en contexto: Cuando
-              aprendes desarrollo web obtienes conocimiento acerca de tres
-              conceptos básicos: HTML (la estructura, semántica e información de
-              la página web, que sería como el esqueleto de nuestra página), CSS
-              (lenguaje de hojas de estilo, para ser más metafórico sería la
-              apariencia de nuestra página) y JavaScript (le da interactividad
-              al sitio creado y seria como el cerebro de la página, que
-              determina qué hacer en función de lo que pasa en la app), con
-              estas tecnologías la web ya está viva y garantiza cierto nivel de
-              dinamismo
+              Una página web estática está compuesta por archivos HTML
+              individuales por cada página que son pre-generados y presentados
+              al usuario a través del navegador de la misma forma.
             </p>
             <p>
-              Sin embargo, estos tres conceptos venían funcionando por separado,
-              en diferentes carpetas y archivos, siendo más complicado de
-              escalar y extraer diversas partes del código para migrar o
-              reutilizar funcionalidades.
+              Como una página web estática básica está compuesta por elementos
+              como títulos, cuadros de textos, etiquetas, imágenes y otros
+              elementos multimedia, un usuario solo puede interactuar con una
+              página web estática a través de lo que permiten los elementos
+              HTML, por ejemplo haciendo clic en enlaces, botones o rellenando
+              formularios como el clásico formulario de subscripción.
             </p>
             <p>
-              ¿Qué decidieron los ingenieros de Facebook? Incluir todo en un
-              solo paquete llamado componente. Ahí dentro se podrán manejar por
-              partes bloques y funcionalidad para el armado de una web. Es decir
-              que podríamos pensar la estructura HTML y JS como inseparables,
-              siempre estarán trabajando juntos. Los componentes podrán
-              reutilizarse y combinarse de acuerdo con el estilo de la web
-              completa (CSS). Así es como esta librería propone abandonar
-              algunas “buenas prácticas del desarrollo web” que se venían
-              implementado en los últimos años incluyendo una cierta notación
-              con la intención de hacer más eficiente el desarrollo de apps
-              escalables: JSX (JavaScript XML).
+              No son tan complejos técnicamente como un sitio web dinámico, pero
+              tampoco son tan versátiles y efectivos cuando se trata de entregar
+              funcionalidad. En pocas palabras, en una página web estática,
+              verás la misma información, diseño y contenido cada vez que la
+              visites, a menos que alguien aplique cambios al código fuente de
+              forma manual.
             </p>
             <p>
-              ¿En qué consiste el código JSX? Se trata de una extensión de la
-              sintaxis de JavaScript que nos permite compilar un objeto
-              JavaScript para mapear un elemento del DOM (Objeto de Documento).
-              A través del JSX, React crea una representación en memoria del DOM
-              denominada Virtual DOM que, a diferencia de la común, pesa muy
-              poco y usa menos recursos para ser creado. Con esto, si un
-              componente cambia su estado y la información a ser renderizada,
-              React lo que hace es comparar los cambios realizados en el Virtual
-              DOM, observa cuáles elementos se han modificado y actualiza solo
-              esa parte en el DOM real. En consecuencia a este funcionamiento,
-              la aplicación se ejecuta más rápidamente.
+              Si quisieras crear una página web estática solo necesitas un
+              editor de texto como el Bloc de notas y saber de HTML y CSS, no es
+              necesario utilizar entornos de desarrollo complejos.
+            </p>
+            <h3>
+              Qué es una página web dinámica
+            </h3>
+            <p>
+              La palabra dinámica se refiere a elementos que cambian
+              continuamente, son interactivos y funcionales, en lugar de ser
+              simplemente informativos. Por supuesto, eso requiere utilizar más
+              que solo código HTML y CSS.
+            </p>
+            <p>
+              En comparación con las páginas web estáticas, que son
+              mayoritariamente informativas, una página web dinámica incluye
+              aspectos que se caracterizan por la interactividad y la
+              funcionalidad, por ejemplo, los usuarios pueden interactuar con la
+              información que se presenta en la página gracias a las
+              instrucciones creadas a través de los lenguajes de programación y
+              la base de datos sobre la que está construida.
+            </p>
+            <p>
+              Los sitios web dinámicos basan su comportamiento y funcionalidad
+              en dos tipos de programación, <strong>front-end</strong> (del lado
+              del cliente) y <strong>back-end</strong> (<em
+                >del lado del servidor</em
+              >). Las instrucciones del lado del cliente es código JavaScript
+              que se ejecuta en el navegador. Mientras que las instrucciones que
+              se ejecutan del lado del servidor son instrucciones escritas en
+              lenguajes de scripting o programación, como ASP.Net, PHP, Python,
+              etc. y que son ejecutadas para crear lo que el usuario ha
+              solicitado en su interacción con la página.
+            </p>
+            <p>
+              Una vez ejecutadas las instrucciones en el servidor, un nuevo HTTP
+              response se envía al navegador del usuario para mostrarle lo que
+              ha solicitado. El resultado final es el mismo que en un sitio web
+              estático: una página HTML que el usuario ve desde el navegador.
+            </p>
+            <p>
+              Por resumir, una página web dinámica puede ser más compleja cuando
+              hablamos de su diseño y desarrollo, pero también es más versátil
+              cuando se trata de la funcionalidad que ofrece.
+            </p>
+
+            <h3>Página web dinámica vs estática: Conclusión</h3>
+            <p>
+              En conclusión, si tienes que crear una página web y debes tomar la
+              decisión entre crear una página web estática o una dinámica, debe
+              basar tu decisión principalmente en los objetivos que quieres
+              cumplir con tu página web y los recursos de tiempo y conocimientos
+              que tengas disponibles.
+            </p>
+            <p>
+              La mayoría de las personas que no poseen conocimientos técnicos de
+              diseño y desarrollo de páginas web, prefieren los sitios web
+              dinámicos porque a través de plataformas CMS como WordPress,
+              Joomla, Drupal o Ghost pueden crear sitios web dinámicos de una
+              forma muy fácil y rápida, a la vez que son más fáciles de mantener
+              a largo plazo.
+            </p>
+            <p>
+              Si bien es cierto que las páginas web dinámicas ofrecen más
+              posibilidades, pueden ser mucho más complejas de construir y
+              mantener para los usuarios que no tengan conocimientos técnicos y
+              deseen incorporar integraciones que no ofrezcan los CMS; mientras
+              que las páginas web estáticas son algo más limitadas, pero en
+              principio son mucho más simples de crear y mantener si posees
+              conocimientos en HTML y CSS.
             </p>
           </div>
         </article>
@@ -205,6 +261,33 @@
         <h3>Articulos Relacionados</h3>
 
         <div class="container row d-flex justify-content-center">
+          <div class="card col-lg-3 col-md-4 col-sm-8 relacionado">
+            <img
+              src="../assets/img/post_1.png"
+              class="card-img-top"
+              alt="destacado"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                ¿Qué es React y cómo funciona?
+              </h4>
+
+              <a href="./post.html" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-plus-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
           <div class="card col-lg-3 col-md-4 col-sm-8 relacionado">
             <img
               src="../assets/img/post_2.png"
@@ -244,33 +327,6 @@
               </h4>
 
               <a href="./post_3.html" target="_blank">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="currentColor"
-                  class="bi bi-plus-circle-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="card col-lg-3 col-md-4 col-sm-8 relacionado">
-            <img
-              src="../assets/img/post_4.jpg"
-              class="card-img-top"
-              alt="destacado"
-            />
-            <div class="card-body">
-              <h4 class="card-title">
-                Páginas web estáticas vs páginas web dinámicas
-              </h4>
-
-              <a href="./post_4.html" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"

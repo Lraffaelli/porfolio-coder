@@ -13,35 +13,34 @@
     .about-me {
         display: flex;
         justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 75px;
-        right: 100px;
+        align-items: flex-start;
+        
         h2 {
+                       
             display: flex;
             justify-content: flex-start;
             align-items: center;
             font-size: 1.5em;
             padding: 0.2em;
             color: rgb(0, 236, 0);
-            &::after {
+           
+        }
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            color: rgb(5, 225, 233);
+            &::before {
                 content: "{";
                 color: rgb(250, 184, 2);
                 font-size: 150px;
             }
-        }
-        p {
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            position: relative;
-            left: 170px;
-            top: -118px;
-            font-size: 1.2em;
-            line-height: 1.5em;
-            color: rgb(5, 225, 233);
 
             &::after {
+                position: relative;
+                top: 150px;
                 content: "}";
                 color: rgb(250, 184, 2);
                 font-size: 150px;
@@ -54,7 +53,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    height: fit-content;
+    padding-bottom: 30px;
     background-image: linear-gradient(to right, #434343 0%, black 100%);
 
     .box-hab {
@@ -69,10 +69,11 @@
             margin-bottom: 20px;
         }
         .h-icon{
-            margin-top: 15px;
+            width: 130px;
+            margin-top: 35px;
             cursor: pointer;
             img{
-                width: 60%; 
+                width: 80%; 
                 transition: all 300ms;
                 
                 &:hover{
@@ -84,7 +85,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 auto;
+            margin: 15px auto;
         }
     }
 }
